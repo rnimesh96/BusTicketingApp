@@ -1,6 +1,0 @@
-API\user\controller\UserLoginController.class
-API\user\model\Users.class
-API\BusTicketingApiApp.class
-API\hello\helloContraller.class
-API\user\service\UserService.class
-API\user\repository\UserRepository.class

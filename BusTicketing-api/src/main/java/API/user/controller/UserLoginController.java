@@ -59,6 +59,18 @@ public class UserLoginController {
 		return userlist;
 	}
 	
+	
+	@RequestMapping(value = "/userone", method = RequestMethod.GET)
+	public List<Users> ViewUsers() {
+		List<Users> userlist = null;
+		try {
+			userlist = UService.getUsers();  
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return userlist;
+	}
+	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String verifyLogin(@RequestParam String username,@RequestParam String password,
 			HttpSession session, Model model){
